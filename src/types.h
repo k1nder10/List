@@ -3,5 +3,6 @@
 
 typedef char** node_t;
 typedef char* string_t;
+typedef char* pointer_t;
 
 #endif

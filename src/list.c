@@ -44,7 +44,7 @@ void StringListAdd(node_t* head, string_t str) {
     }
 
     node_t new_node = create_node(str, NULL);
-    curr[next] = (string_t)new_node;
+    curr[next] = (pointer_t)new_node;
 }
 
 
@@ -90,14 +90,13 @@ int StringListIndexOf(node_t head, string_t str) {
     int index = 0;
 
     while (head != NULL) {
-        if (strcmp(head[value], str) == 0) break;
+        if (strcmp(head[value], str) == 0) return index;
 
         head = (node_t)head[next];
         index += 1;
     }
 
-    if (head == NULL) return -1;
-    return index;
+    return -1;
 }
 
 
