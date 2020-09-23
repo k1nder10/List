@@ -9,7 +9,6 @@ add_executable(stringlist src/main.c
                           src/details.h
                           src/types.h)
 
-# Set a default build type if none was specified
 set(default_build_type "Debug")    
 if(NOT CMAKE_BUILD_TYPE AND NOT CMAKE_CONFIGURATION_TYPES)
     message("Message: Setting build type to '${default_build_type}' as none was specified.")
